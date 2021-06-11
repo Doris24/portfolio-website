@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
   <body>
@@ -38,17 +39,18 @@
         <p>
           Skype: <a href="skype:dorisk147" id="contact-id">dorisk147</a> <br>
           Mail: <a href="mailto:doris-will@freenet.de?subject=contact">doris-will@freenet.de</a> <br>
-          <a href="mailto:doris-will@freenet.de?subject=contact">Contact me</a>
+
+          <a id="contact-me" href="mailto:doris-will@freenet.de?subject=contact">Contact me</a>
         </p>
         <form id="contact_form" action="" method="post">
           <label class="standard-label" for="contact-email">Email: </label>
-          <input id="contact-email" type="email" name="" value="" required>
+          <input class="contact_form--text" id="contact-email" type="email" name="" value="" required>
 
           <label class="standard-label" for="contact-tel">Telephone: </label>
-          <input id="contact-tel" type="tel" name="" value="">
+          <input class="contact_form--text" id="contact-tel" type="tel" name="" value="">
 
           <label class="standard-label" for="contact-message">Message: </label>
-          <textarea id="contact-message" name="message" rows="3" cols="30" maxlength="240" required></textarea>
+          <textarea class="contact_form--text" id="contact-message" name="message" rows="4" cols="30" maxlength="240" required></textarea>
 
           <input class="input-button" type="submit" name="" value="Send message">
         </form>
