@@ -204,7 +204,8 @@ a:active {
 }
 #contact-me {
   display: block;
-  margin-top: 10px;
+  max-width: 100px;
+  margin: 10px auto;
 
 }
 /*---contact_form----------------*/
@@ -265,7 +266,9 @@ a:active {
   text-align: center;
 }
 
-@media all and (max-width: 550px) {
+/*---media queries----------------------------*/
+/*---extra small---------------------------*/
+@media all and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -275,8 +278,12 @@ a:active {
   h2 {
     font-size: var(--font-size-16);
   }
+  #contact_form {
+    max-width: 350px;
+  }
 }
-@media all and (min-width: 550px) and (max-width: 780px) {
+/*---small---------------------------*/
+@media all and (min-width: 600px) and (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -286,17 +293,17 @@ a:active {
   h2 {
     font-size: 20px;
   }
+  #contact_form {
+    max-width: 420px;
+  }
 }
-@media all and (max-width: 780px) { /*shared under 780px*/
+@media all and (max-width: 900px) { /*shared under 780px*/
   .grid {
     grid-gap: 10px;
   }
   .page-header {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    padding: 20px;
     margin: 0 auto;
     padding: 0;
   }
