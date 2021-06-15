@@ -31,11 +31,13 @@ header {
   line-height: 1.2;
   font-weight: 400;
 }
+
 main {
   font-size: var(--font-size-16);
   line-height: 1.5;
   margin: 0 auto;
 }
+
 footer {
   font-size: 14px;
   line-height: 1;
@@ -47,11 +49,13 @@ h1 {
   line-height: 1.7;
   text-align: center;
 }
+
 h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.6;
 }
+
 h3 {
   font-size: 18px;
   font-weight: 700;
@@ -67,20 +71,25 @@ a {
   color: var(--text-color);
   text-decoration: none;
 }
+
 a:visited {
   color: var(--text-color);
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
   color: var(--primary-color);
 }
+
 a:active {
   color: var(--secondary-color);
 }
 
-.input-button, .button {
-  border: none; /*overwrite browser default and reset*/
+.input-button,
+.button {
+  border: none;  /* overwrite browser default and reset */
   display: inline-block;
-  font-family: inherit; /*takes font from outer container*/
+  font-family: inherit; /* takes font from outer container */
   background-color: var(--primary-color);
   color: var(--text-color-darker);
   font-size: 14px;
@@ -91,7 +100,11 @@ a:active {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   transition: 0.2s opacity;
 }
-.input-button:hover, .input-button:focus, .button:hover, .button:focus {
+
+.input-button:hover,
+.input-button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   color: var(--text-color-darker);
   opacity: 0.8; /* reduces the opacity of the button to 80% */
@@ -103,20 +116,25 @@ a:active {
   padding: 20px;
   border-bottom: 0.5px solid;
 }
+
 #logo {
   height: 50px;
 }
+
 .page-header__item {
-  /*grow shrink basis*/
+  /* grow shrink basis */
   flex: 0 1 200px;
 }
+
 .page-header .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
 }
+
 .navigation-list {
   list-style-type: none;
 }
+
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
@@ -125,17 +143,22 @@ a:active {
 .navigation-list__item {
   font-size: 18px;
 }
+
 .navigation-list__item--active {
   text-decoration: none;
   font-weight: bold;
 }
 
-.profile, .about, .work, .contact {
+.profile,
+.about,
+.work,
+.contact {
   width: 80%;
   max-width: 1000px;
   min-width: 360px;
   margin: 0 auto;
 }
+
 .profile__portrait {
   width: 250px;
   float: left;
@@ -149,16 +172,18 @@ a:active {
   flex-direction: column;
   text-align: center;
 }
+
 .about li {
   margin: 0 auto;
   list-style-type: none;
   border-left: solid var(--primary-color);
 }
+
 .about a {
   margin: 0 auto;
 }
 
-/*---svg animation--------------*/
+/* ---svg animation-------------- */
 .about-svg {
   margin: 0 auto;
   width: 100%;
@@ -166,14 +191,16 @@ a:active {
 
 @keyframes circle-roll {
   0% {
-    transform: translate(-94px, 0px);
+    transform: translate(-94px, 0);
     fill: var(--text-color);
   }
+
   50% {
     fill: var(--primary-color);
   }
+
   100% {
-    transform: translate(94px, 0px);
+    transform: translate(94px, 0);
     fill: var(--text-color);
   }
 }
@@ -181,6 +208,7 @@ a:active {
 .circle {
   animation: 5s circle-roll infinite alternate linear;
 }
+
 /*
 .circle {
   animation-duration: 8s;
@@ -195,20 +223,22 @@ a:active {
   fill: var(--secondary-color);
 }
 
-/*---contact----------------*/
+/* ---contact---------------- */
 .contact p {
   text-align: center;
 }
+
 .contact a {
   margin-left: 5px;
 }
+
 #contact-me {
   display: block;
   max-width: 100px;
   margin: 10px auto;
-
 }
-/*---contact_form----------------*/
+
+/* ---contact_form---------------- */
 #contact_form {
   clear: both;
   display: flex;
@@ -217,8 +247,9 @@ a:active {
   margin: 20px auto;
   padding: 5px;
 }
+
 .contact_form--text {
-  margin: 0px 10px 5px 10px;
+  margin: 0 10px 5px;
 }
 
 #contact_form .input-button {
@@ -226,35 +257,37 @@ a:active {
   margin-top: 10px;
 }
 
-
-/*---footer----------------------*/
+/* ---footer---------------------- */
 .page-footer {
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 .social-media a {
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 
-
-/*---work grid------------------*/
+/* ---work grid------------------ */
 .grid {
   margin: 20px;
 }
-/*start grid fallback*/
+
+/* start grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
-/*end grid fallback*/
+
+/* end grid fallback */
 @supports (display:grid) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
+
   .grid__item {
     border: solid 2px var(--primary-color);
     width: auto;
@@ -262,64 +295,79 @@ a:active {
     padding: 20px;
   }
 }
+
 .grid__item h2 {
   text-align: center;
 }
 
-/*---media queries----------------------------*/
-/*---extra small---------------------------*/
+/* ---media queries---------------------------- */
+
+/* ---extra small--------------------------- */
 @media all and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
+
   h1 {
     font-size: 24px;
   }
+
   h2 {
     font-size: var(--font-size-16);
   }
+
   #contact_form {
     max-width: 350px;
   }
 }
-/*---small---------------------------*/
+
+/* ---small--------------------------- */
 @media all and (min-width: 600px) and (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+
   h1 {
     font-size: 28px;
   }
+
   h2 {
     font-size: 20px;
   }
+
   #contact_form {
     max-width: 420px;
   }
 }
-@media all and (max-width: 900px) { /*shared under 780px*/
+
+@media all and (max-width: 900px) { /* shared under 780px */
   .grid {
     grid-gap: 10px;
   }
+
   .page-header {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     padding: 0;
   }
+
   #logo {
-    margin: 15px 0px 0px 20px;
+    margin: 15px 0 0 20px;
   }
+
   .page-header__item {
-    /*grow shrink basis*/
-    flex: 0 0 0px;
+    /* grow shrink basis */
+    flex: 0 0 0;
   }
+
   .page-header .page-header__item:last-child {
     flex-grow: 0;
     text-align: center;
   }
+
   .navigation-list li {
-    margin: 0px 10px;
-    padding: 0px 5px;
+    margin: 0 10px;
+    padding: 0 5px;
   }
 }
