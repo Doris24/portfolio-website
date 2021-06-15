@@ -160,6 +160,7 @@ a:active {
   margin: 0 auto;
 }
 
+/* ---index.html------------- */
 .profile__portrait {
   width: 250px;
   float: left;
@@ -167,6 +168,7 @@ a:active {
   border-radius: 50%;
 }
 
+/* ---about.html------------- */
 .about {
   clear: both;
   display: flex;
@@ -316,6 +318,13 @@ a:active {
 
   h2 {
     font-size: var(--font-size-16);
+  }
+
+  .profile__portrait {
+    display: block;
+    width: 150px;
+    float: none;
+    margin: 15px auto 0;
   }
 
   #contact_form {

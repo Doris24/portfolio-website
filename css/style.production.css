@@ -194,6 +194,7 @@ a:active {
   margin: 0 auto;
 }
 
+/* ---index.html------------- */
 .profile__portrait {
   width: 250px;
   float: left;
@@ -201,6 +202,7 @@ a:active {
   border-radius: 50%;
 }
 
+/* ---about.html------------- */
 .about {
   clear: both;
   display: -webkit-box;
@@ -220,7 +222,7 @@ a:active {
 }
 
 .about a {
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 
 /* ---svg animation-------------- */
@@ -389,6 +391,13 @@ a:active {
 
   h2 {
     font-size: 16px;
+  }
+
+  .profile__portrait {
+    display: block;
+    width: 150px;
+    float: none;
+    margin: 15px auto 0;
   }
 
   #contact_form {
