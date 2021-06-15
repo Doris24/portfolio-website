@@ -138,6 +138,7 @@ a:active {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  padding: 0 5px;
 }
 
 .navigation-list__item {
@@ -319,6 +320,15 @@ a:active {
   #contact_form {
     max-width: 350px;
   }
+
+  .navigation-list__item {
+    font-size: 16px;
+  }
+
+  .navigation-list li {
+    margin-left: 5px;
+    padding: 0 5px;
+  }
 }
 
 /* ---small--------------------------- */
@@ -364,10 +374,5 @@ a:active {
   .page-header .page-header__item:last-child {
     flex-grow: 0;
     text-align: center;
-  }
-
-  .navigation-list li {
-    margin: 0 10px;
-    padding: 0 5px;
   }
 }
