@@ -264,6 +264,7 @@ a:active {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 20px 0;
 }
 
 .social-media a {
