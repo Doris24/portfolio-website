@@ -168,6 +168,10 @@ a:active {
   border-radius: 50%;
 }
 
+.profile-text {
+  text-align: center;
+}
+
 /* ---about.html------------- */
 .about {
   clear: both;
