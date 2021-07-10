@@ -7,8 +7,7 @@ Secondary Color (yellow): #f4d160 / #fbeeac;
 */
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -83,9 +82,9 @@ a:active {
 }
 
 .input-button {
-  border: none;  /* overwrite browser default and reset */
+  border: none;
   display: inline-block;
-  font-family: inherit; /* takes font from outer container */
+  font-family: inherit;
   background-color: #8ac4d0;
   color: #1e4e78;
   font-size: 14px;
@@ -93,15 +92,14 @@ a:active {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  -webkit-transition: 0.2s opacity;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
 
 .button {
-  border: none;  /* overwrite browser default and reset */
+  border: none;
   display: inline-block;
-  font-family: inherit; /* takes font from outer container */
+  font-family: inherit;
   background-color: #8ac4d0;
   color: #1e4e78;
   font-size: 14px;
@@ -109,38 +107,35 @@ a:active {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  -webkit-transition: 0.2s opacity;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
 
 .input-button:hover {
   cursor: pointer;
   color: #1e4e78;
-  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
 .input-button:focus {
   cursor: pointer;
   color: #1e4e78;
-  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
 .button:hover {
   cursor: pointer;
   color: #1e4e78;
-  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
 .button:focus {
   cursor: pointer;
   color: #1e4e78;
-  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
@@ -153,15 +148,11 @@ a:active {
 
 .page-header__item {
   /* grow shrink basis */
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header .page-header__item:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -202,16 +193,15 @@ a:active {
   border-radius: 50%;
 }
 
+.profile-text {
+  text-align: center;
+}
+
 /* ---about.html------------- */
 .about {
   clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -231,28 +221,9 @@ a:active {
   width: 100%;
 }
 
-@-webkit-keyframes circle-roll {
-  0% {
-    -webkit-transform: translate(-94px, 0);
-            transform: translate(-94px, 0);
-    fill: #28527a;
-  }
-
-  50% {
-    fill: #8ac4d0;
-  }
-
-  100% {
-    -webkit-transform: translate(94px, 0);
-            transform: translate(94px, 0);
-    fill: #28527a;
-  }
-}
-
 @keyframes circle-roll {
   0% {
-    -webkit-transform: translate(-94px, 0);
-            transform: translate(-94px, 0);
+    transform: translate(-94px, 0);
     fill: #28527a;
   }
 
@@ -261,26 +232,14 @@ a:active {
   }
 
   100% {
-    -webkit-transform: translate(94px, 0);
-            transform: translate(94px, 0);
+    transform: translate(94px, 0);
     fill: #28527a;
   }
 }
 
 .circle {
-  -webkit-animation: 5s circle-roll infinite alternate linear;
-          animation: 5s circle-roll infinite alternate linear;
+  animation: 5s circle-roll infinite alternate linear;
 }
-
-/*
-.circle {
-  animation-duration: 8s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-*/
 
 .rect {
   fill: #f4d160;
@@ -304,20 +263,15 @@ a:active {
 /* ---contact_form---------------- */
 #contact_form {
   clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 500px;
   margin: 20px auto;
   padding: 5px;
 }
 
 .contact_form--text {
-  margin: 0 10px 5px;
+  margin: 0;
 }
 
 #contact_form .input-button {
@@ -328,13 +282,8 @@ a:active {
 /* ---footer---------------------- */
 .page-footer {
   clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding: 20px 0;
 }
@@ -357,9 +306,7 @@ a:active {
 /* end grid fallback */
 @supports (display:grid) {
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
@@ -381,7 +328,6 @@ a:active {
 /* ---extra small--------------------------- */
 @media all and (max-width: 600px) {
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -417,7 +363,6 @@ a:active {
 /* ---small--------------------------- */
 @media all and (min-width: 600px) and (max-width: 900px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -434,19 +379,14 @@ a:active {
   }
 }
 
-@media all and (max-width: 900px) { /* shared under 780px */
+@media all and (max-width: 900px) {
   .grid {
     grid-gap: 10px;
   }
 
   .page-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     padding: 0;
   }
@@ -456,16 +396,11 @@ a:active {
   }
 
   .page-header__item {
-    /* grow shrink basis */
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 0px;
-            flex: 0 0 0;
+    flex: 0 0 0;
   }
 
   .page-header .page-header__item:last-child {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
     text-align: center;
   }
 }
