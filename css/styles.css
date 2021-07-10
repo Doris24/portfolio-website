@@ -87,9 +87,9 @@ a:active {
 
 .input-button,
 .button {
-  border: none;  /* overwrite browser default and reset */
+  border: none;
   display: inline-block;
-  font-family: inherit; /* takes font from outer container */
+  font-family: inherit;
   background-color: var(--primary-color);
   color: var(--text-color-darker);
   font-size: 14px;
@@ -97,7 +97,7 @@ a:active {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
 
@@ -107,7 +107,7 @@ a:active {
 .button:focus {
   cursor: pointer;
   color: var(--text-color-darker);
-  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
 .page-header {
@@ -168,6 +168,10 @@ a:active {
   border-radius: 50%;
 }
 
+.profile-text {
+  text-align: center;
+}
+
 /* ---about.html------------- */
 .about {
   clear: both;
@@ -212,16 +216,6 @@ a:active {
   animation: 5s circle-roll infinite alternate linear;
 }
 
-/*
-.circle {
-  animation-duration: 8s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-*/
-
 .rect {
   fill: var(--secondary-color);
 }
@@ -252,7 +246,7 @@ a:active {
 }
 
 .contact_form--text {
-  margin: 0 10px 5px;
+  margin: 0;
 }
 
 #contact_form .input-button {
@@ -360,7 +354,7 @@ a:active {
   }
 }
 
-@media all and (max-width: 900px) { /* shared under 780px */
+@media all and (max-width: 900px) {
   .grid {
     grid-gap: 10px;
   }
@@ -377,7 +371,6 @@ a:active {
   }
 
   .page-header__item {
-    /* grow shrink basis */
     flex: 0 0 0;
   }
 
