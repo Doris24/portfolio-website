@@ -55,6 +55,12 @@ h3 {
   line-height: 1.5;
 }
 
+h4 {
+  font-size: 13px;
+  font-weight: bolder;
+  margin: 5px 0px;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -245,7 +251,7 @@ a:active {
   fill: #f4d160;
 }
 
-/* ---contact---------------- */
+/* ---contact-------------------------------------------- */
 .contact p {
   text-align: center;
 }
@@ -279,7 +285,7 @@ a:active {
   margin-top: 10px;
 }
 
-/* ---footer---------------------- */
+/* ---footer-------------------------------- */
 .page-footer {
   clear: both;
   display: flex;
@@ -293,8 +299,33 @@ a:active {
 }
 
 /* ---work grid------------------ */
+.work-h {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work-p {
+  font-size: 12px;
+  margin: 0px 0px 5px 5px;
+}
+
+.work-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  margin: 0px auto;
+}
+
+.work-screenshots-container {
+  width: 100%;
+}
+
+.work-screenshots {
+  width: 100%;
+}
+
 .grid {
-  margin: 20px;
+  margin: 15px;
 }
 
 /* start grid fallback */
