@@ -275,6 +275,71 @@ a:active {
   margin: 0 3px;
 }
 
+.impressum {
+  padding-top: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* ---casestudy-------------------------------*/
+.credits__p {
+  margin: 0;
+  padding: 0;
+}
+
+.case-study {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-study-container {
+  max-width: 75%;
+}
+
+.intro,
+.approach-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-img,
+.front-img {
+  width: 75%;
+  align-self: center;
+  margin: auto 0;
+}
+
+.case-study-img {
+  max-width: 100%;
+  padding: 20px 0;
+}
+
+.case-study-back {
+  margin-top: 25px;
+}
+
+.case-study p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+
+table {
+  /* border: 1px solid; */
+  border: 2px solid var(--primary-color);
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.firstcol {
+  width: 100px;
+}
+
 /* ---work grid------------------ */
 .work-h {
   margin-top: 10px;
@@ -333,12 +398,36 @@ a:active {
   text-align: center;
 }
 
-/* ---media queries---------------------------- */
+/* ---media queries----------------------------------------------------- */
 
 /* ---extra small--------------------------- */
-@media all and (max-width: 600px) {
+@media all and (max-width: 680px) {
+  /* .grid {
+    grid-gap: 10px;
+  } */
+
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #logo {
+    margin: 25px 0 0 20px;
+  }
+
+  .page-header__item {
+    flex: 0 0 0;
+  }
+
+  .page-header .page-header__item:last-child {
+    flex-grow: 0;
+    text-align: center;
   }
 
   h1 {
@@ -368,6 +457,18 @@ a:active {
     margin-left: 5px;
     padding: 0 5px;
   }
+
+  /*---case-study----*/
+  .case-study-container {
+    max-width: 90%;
+  }
+
+  .intro-img,
+  .front-img {
+    width: 90%;
+    align-self: center;
+    margin: auto 0;
+  }
 }
 
 /* ---small--------------------------- */
@@ -387,10 +488,22 @@ a:active {
   #contact_form {
     max-width: 420px;
   }
+
+  /*---case-study-------*/
+  .case-study-container {
+    max-width: 75%;
+  }
+
+  .intro-img,
+  .front-img {
+    width: 75%;
+    align-self: center;
+    margin: auto 0;
+  }
 }
 
-@media all and (max-width: 900px) {
-  .grid {
+@media all and (min-width: 900px) {
+  /* .grid {
     grid-gap: 10px;
   }
 
@@ -402,7 +515,7 @@ a:active {
   }
 
   #logo {
-    margin: 15px 0 0 20px;
+    margin: 25px 0 0 20px;
   }
 
   .page-header__item {
@@ -412,5 +525,41 @@ a:active {
   .page-header .page-header__item:last-child {
     flex-grow: 0;
     text-align: center;
+  } */
+
+  /*---case-study-----------------*/
+  .case-study-container {
+    width: 70%;
+    max-width: 800px;
   }
+
+  .intro,
+  .approach-front {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-content,
+  .front-content {
+    width: 50%;
+    align-self: flex-start;
+    margin-right: 10px;
+  }
+
+  .intro-img,
+  .front-img {
+    width: 50%;
+    align-self: flex-end;
+    margin: auto 0;
+    margin-left: 10px;
+  }
+
+  .case-study-img {
+    max-width: 100%;
+    padding: 0;
+  }
+
+
 }
