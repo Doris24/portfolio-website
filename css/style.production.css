@@ -275,7 +275,7 @@ a:active {
   border: solid 2px #8ac4d0;
   padding: 0;
   margin: 5px;
-  /* max-width: 500px; */
+
 }
 
 .about-skills-list {
@@ -291,7 +291,7 @@ a:active {
   -ms-flex-pack: center;
   justify-content: center;
   max-width: 500px;
-  /* background-color: aquamarine; */
+
 }
 
 .about-skills-list-item {
@@ -762,6 +762,5 @@ table {
     max-width: 100%;
     padding: 0;
   }
-
 
 }
