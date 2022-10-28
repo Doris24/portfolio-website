@@ -174,21 +174,43 @@ a:active {
   float: left;
   margin-right: 40px;
   border-radius: 50%;
+  font-size: 30px;
+}
+
+.profile-text h1 {
+  margin-top: 2em;
+}
+
+.profile-text p {
+  font-size: 25px;
 }
 
 .profile-text {
   text-align: center;
 }
 
+.profile-text a {
+  text-decoration: underline;
+}
+
+
 /* ---about.html------------- */
 .about {
+  max-width: 750px;
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.about li {
+.about-intro p {
+  width: 90%;
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+.interests-list {
   margin: 0 auto;
   list-style-type: none;
   border-left: solid var(--primary-color);
@@ -196,6 +218,38 @@ a:active {
 
 .about a {
   margin: 15px auto 0;
+}
+
+.about-skills {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-block {
+  border: solid 2px var(--primary-color);
+  padding: 0;
+  margin: 5px;
+  /* max-width: 500px; */
+}
+
+.about-skills-list {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 500px;
+  /* background-color: aquamarine; */
+}
+
+.about-skills-list-item {
+  background-color: #fef1c4;
+  border: solid #fef1c4;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 5px 5px;
+  list-style-type: none;
+  width: auto;
+
 }
 
 /* ---svg animation-------------- */
@@ -229,9 +283,6 @@ a:active {
 }
 
 /* ---contact-------------------------------------------- */
-.contact p {
-  text-align: center;
-}
 
 .contact a {
   margin-left: 5px;
@@ -241,6 +292,15 @@ a:active {
   display: block;
   max-width: 100px;
   margin: 10px auto;
+}
+
+.contact-links {
+  /* background-color: aqua; */
+  list-style: none;
+  display: block;
+  max-width: 275px;
+  margin: 10px auto;
+  /* width: 400px; */
 }
 
 /* ---contact_form---------------- */
@@ -269,10 +329,11 @@ a:active {
   flex-direction: column;
   text-align: center;
   padding: 20px 0;
+  margin-top: 50px;
 }
 
 .social-media a {
-  margin: 0 3px;
+  margin: 0 10px;
 }
 
 .impressum {
