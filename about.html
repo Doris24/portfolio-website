@@ -37,30 +37,93 @@
   <main>
     <div class="about">
       <h1>About Me</h1>
-      <p>
-        Hello! My name is Doris Will and I live in Germany. <br>
-        I am currently on my way to becoming a web developer with the help of the Full Stack Web Developer Program at
-        Career Foundry.
-      </p>
-      <p>
-        This is what I enjoy doing:
-      </p>
-      <ul>
-        <li>Front-end development</li>
-        <li>Fitness</li>
-        <li>Travel</li>
-      </ul>
-      <!-- <a id="CVdownload" href="./files/cv.pdf" class="button" target="_blank" download>Download my CV</a> -->
+      <div class="about-intro">
+        <p>
+          I am a web developer with a Bachelor degree in Information Engineering. My background in tutoring taught me
+          the importance of communication and organisation as well as how to adapt to different situations quickly.
+          After working on a few projects using React, React Native and Angular, I want to enhance my current knowledge
+          and gain experience while working on different projects in the web development career field.
+        </p>
+      </div>
+      <div>
+        <h2>Interests</h2>
+        <ul>
+          <li class="interests-list">Front-end development</li>
+          <li class="interests-list">User Experience</li>
+          <li class="interests-list">Fitness</li>
+          <li class="interests-list">Travel</li>
+        </ul>
 
-      <svg class="about-svg" width="200mm" height="40mm" viewBox="0 0 200 40" version="1.1" id="svg5">
-        <g>
-          <circle class="circle" id="path487" cx="100" cy="25" r="6" />
-          <rect class="rect" id="rect593" width="200" height="2" x="0" y="33" />
-        </g>
-      </svg>
+      </div>
 
       <h2>My Skills</h2>
-      <table>
+      <div class="about-skills">
+        <div class="skills-block">
+          <h3>Languages</h3>
+          <ul class="about-skills-list">
+            <li class="about-skills-list-item">HTML</li>
+            <li class="about-skills-list-item">CSS</li>
+            <li class="about-skills-list-item">JavaScript</li>
+            <li class="about-skills-list-item">TypeScript</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Front-end libraries and frameworks</h3>
+          <ul class="about-skills-list">
+            <li class="about-skills-list-item">React</li>
+            <li class="about-skills-list-item">Bootstrap</li>
+            <li class="about-skills-list-item">jQuery</li>
+            <li class="about-skills-list-item">React-Redux</li>
+            <li class="about-skills-list-item">Angular</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Back-end and other libraries</h3>
+          <ul class="about-skills-list">
+            <li class="about-skills-list-item">NodeJS</li>
+            <li class="about-skills-list-item">Express</li>
+            <li class="about-skills-list-item">Morgan</li>
+            <li class="about-skills-list-item">CORS</li>
+            <li class="about-skills-list-item">Axios</li>
+            <li class="about-skills-list-item">Parcel</li>
+            <li class="about-skills-list-item">PropTypes</li>
+            <li class="about-skills-list-item">serverless</li>
+            <li class="about-skills-list-item">Recharts</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Testing and QA</h3>
+          <ul class="about-skills-list">
+            <li class="about-skills-list-item">Postman</li>
+            <li class="about-skills-list-item">Jest</li>
+            <li class="about-skills-list-item">Ezyme</li>
+            <li class="about-skills-list-item">Cucumber</li>
+            <li class="about-skills-list-item">Puppeteer</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Web services and databases</h3>
+          <ul class="about-skills-list">
+            <li class="about-skills-list-item">GitHub</li>
+            <li class="about-skills-list-item">AWS</li>
+            <li class="about-skills-list-item">MongoDB</li>
+            <li class="about-skills-list-item">PostgreSQL</li>
+            <li class="about-skills-list-item">Google Firestore</li>
+            <li class="about-skills-list-item">Heroku</li>
+            <li class="about-skills-list-item">Netlify</li>
+          </ul>
+        </div>
+        <div class="skills-block">
+          <h3>Mobile Apps</h3>
+          <ul class="about-skills-list">
+            <li class="about-skills-list-item">PWA</li>
+            <li class="about-skills-list-item">React Native</li>
+            <li class="about-skills-list-item">Android Studio</li>
+            <li class="about-skills-list-item">Expo</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <table>
         <thead>
           <tr>
             <th></th>
@@ -85,21 +148,37 @@
             <td>Beginner</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
+
+      <div>
+        <a id="CVdownload" href="./files/cv.pdf" class="button" target="_blank" download>Resume</a>
+      </div>
+
+      <svg class="about-svg" width="200mm" height="40mm" viewBox="0 0 200 40" version="1.1" id="svg5">
+        <g>
+          <circle class="circle" id="path487" cx="100" cy="25" r="6" />
+          <rect class="rect" id="rect593" width="200" height="2" x="0" y="33" />
+        </g>
+      </svg>
     </div>
+
+
+
   </main>
+
+
 
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
       <a href="https://github.com/Doris24" target="_blank"> <img src="img/iconfinder_github.svg" alt="GitHub"></a>
       <!--<a href="#"> <img src="img/iconfinder_twitter.svg" alt="Twitter"></a>-->
-      <!--<a href="#"> <img src="img/iconfinder_linkedin.svg" alt="LinkedIn"></a>-->
+      <a href="https://www.linkedin.com/in/doriswill/"> <img src="img/iconfinder_linkedin.svg" alt="LinkedIn"></a>
     </div>
-    <div class="impressum">
+    <!-- <div class="impressum">
       <a href="#" target="_blank">Impressum (download PDF)</a>
 
-    </div>
+    </div> -->
   </footer>
 
   <!--<script src="js/tota11y.min.js"></script>-->
